@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    font-style: italic;
+    }
+    h1{
+        color: green;
+    }
+    h2{
+        color: brown;
+    }
+    #page_footer{
+    font-style: italic;
+    font-size: small;
+    }
+    table{
+        border: 1px solid;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       tr, th, td{
+        border: 1px solid;
+        width: 60px;
+        height: 20px;
+       }

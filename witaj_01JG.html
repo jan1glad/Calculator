@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssJG/style.css">
+    <script src="skryptyJG/skrypty.js"></script>
+    <title>Kalkulator Gładykowski</title>
+</head>
+<body onload="startKalkulator()">
+    <h1>Kalkulator Gładykowskiego nr. 33970</h1>
+    <h2>Dokonaj wybór swoich obliczeń</h2>
+    <header id='JG_page_header'>
+         </header>
+         <section id='JG_kalkulator'>
+            <h3>Kalkulator</h3>
+            <input type='number' id='JG_liczba1'>
+            <span id='JG_kalkulatorSelect'>
+            <select id='JG_selectOperator' ></select>
+            </span>
+            <input type='number' id='JG_liczba2'>
+            <button onclick = "oblicz()">=</button>
+            <input onmouseenter="oblicz()" type='number' id='JG_wynik' readonly>
+            <br><label id='JG_error'></label>
+            <br><button onclick="doOperatorow()">zmień operatory</button>
+            <button onclick="doHistorii()">zobacz historię obliczeń</button>
+         </section>
+         <section id='JG_operatory'>
+            <h3>Dodaj usuń operator</h3>
+            <label>Usuń dodaj operator:</label>
+            <span id='JG_usunSelect'></span>
+            <button onclick='usunOperator()'>Usuń operator</button>
+            <br>
+            <label>Dodaj operator:</label>
+            <select id='JG_selectAddOperator' ></select>
+            <button onclick='dodajOperator()'>Dodaj operator</button>
+            <br><br><button onclick='doKalkulatora()'>wróć do kalkulatora</button>
+            <button onclick='doHistorii()'>zobacz historię obliczeń</button>
+         </section>
+         <section id='JG_memory'>
+         <h3>Pamięć obliczeń</h3>
+            <table id='JG_memoryObliczenia'></table>
+            <br><br><button onclick='doKalkulatora()'>wróć do kalkulatora</button>
+            <button onclick='doOperatorow()'>zmień operatory</button>
+            </section>
+         </section>
+         <footer id='JG_page_footer'>
+         &copy; Gładykowski 33970
+         </footer>
+</body>
+</html>
